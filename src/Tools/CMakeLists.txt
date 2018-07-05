@@ -1,7 +1,7 @@
 add_subdirectory(ManuallyAlignPointCloud)
 
 macro(TOOL TOOL_NAME)
-    add_executable(${TOOL_NAME} "${TOOL_NAME}.cpp")
+    add_executable(${TOOL_NAME} "${TOOL_NAME}.cpp" "${TOOL_NAME}.cxx")
 
     set(DEPENDENCIES "${ARGN}")
     foreach(DEPENDENCY IN LISTS DEPENDENCIES)
