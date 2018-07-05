@@ -11,6 +11,7 @@ macro(TOOL TOOL_NAME)
     set_target_properties(${TOOL_NAME} PROPERTIES FOLDER "Tools")
 endmacro(TOOL)
 
+TOOL(ReformatPointCloud      ${CMAKE_PROJECT_NAME})
 TOOL(ConvertPointCloud      ${CMAKE_PROJECT_NAME})
 TOOL(EncodeShader)
 TOOL(ManuallyCropGeometry   ${CMAKE_PROJECT_NAME})
